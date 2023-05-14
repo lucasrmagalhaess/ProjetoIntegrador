@@ -24,8 +24,9 @@ public class jogar {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-
-		if (pergunta01() == 1) {    	// pergunta 01
+		
+						                  // pergunta 01
+		    if (pergunta01() == 1) {    	
 			tecleParaContinuar();
 
 		} else {
@@ -33,7 +34,8 @@ public class jogar {
 			System.out.println("                         Sua pontuação foi R$ "+pontuacao              );
 			System.out.println("");
 			tecleParaSair();
-		}
+		   }
+		
 		
 		
 		if (continuaJogo) {				// pegunta 02			
@@ -410,10 +412,10 @@ public class jogar {
 	}										
 											// funcao para chamar o resultado final ao acertar todas
 	static int resultadoFinal() {   
-		System.out.println("\r==================== Parabéns, você chegou ao final do jogo!\n ========================"
-				+ "===");
-		System.out.println("                     Sua Premiação total foi de: R$ \n" + pontuacao                          );
-		System.out.println("                           OBRIGADO POR JOGAR!                                              ");
+		System.out.println("\r==========================================================================================");
+		System.out.println("                       Parabéns, você chegou ao final do jogo!                         ");
+		System.out.println("                               VOCE GANHOU R$ " + pontuacao                          );
+		System.out.println("\n                               OBRIGADO POR JOGAR!                                        ");
 		System.out.println("============================================================================================");
 		return pontuacao;
 	}
@@ -429,7 +431,7 @@ public class jogar {
 		} catch (Exception e) {
 		}
 	}
-											// retorna ao inicio apos errar resposta
+										// retorna ao inicio apos errar resposta ou volta ao menu
 	public static void tecleParaSair() {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("======================");
