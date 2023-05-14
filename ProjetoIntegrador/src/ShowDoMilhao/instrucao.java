@@ -1,5 +1,7 @@
 package ShowDoMilhao;
 
+import ShowDoMilhao.sair; // importando a classe e o pacote para poder chamar metodo
+
 import java.util.Scanner;
 
 public class instrucao {
@@ -15,20 +17,13 @@ public class instrucao {
 				+ "\r\tBoa sorte! =)\r");
 		System.out.println("\t+-------------------------------------------------------------------------------------------------------------------------------------------+\n");
 
-		tecleParaSair();
-
+		//chama metodo da classe sair para voltar ao menu
+		
+		sair voltarMenu = new sair();
+		voltarMenu.voltaAoMenu();
 	}
 	
-	public static void tecleParaSair() {
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("\t\t\t\t\t\t\t>>>> TECLE ENTER PARA VOLTAR <<<<");
-		
-		try {
-			System.in.read();
-			entrada.nextLine();
-		} catch (Exception e) {
-		}
-	}
+	
 
 
 }
