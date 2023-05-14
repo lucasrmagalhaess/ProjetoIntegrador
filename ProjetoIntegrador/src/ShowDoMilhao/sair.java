@@ -24,7 +24,7 @@ public class sair {
 	
 	public static void voltaAoMenu() {
 	Scanner entrada = new Scanner(System.in);
-	System.out.println("\t\t\t\t\t>>>> TECLE PARA VOLTAR AO MENU <<<<");
+	System.out.println("\t\t\t\t\t>>>> TECLE ENTER PARA VOLTAR AO MENU <<<<");
 	
 	try {
 		System.in.read();
