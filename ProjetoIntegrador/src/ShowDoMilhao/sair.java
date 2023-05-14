@@ -14,23 +14,17 @@ public class sair {
 		System.out.println("Camille Pereira");
 		System.out.println("Gabriel Gonzaga");
 		System.out.println("João Pereira");
-		System.out.println("Lucas Rodrigues\n");
+		System.out.println("Lucas Rodrigues\n"); 
 		voltaAoMenu();
-		
-	    }
-			
+	} 
 	
-	
-	
-	public static void voltaAoMenu() {
-	Scanner entrada = new Scanner(System.in);
-	System.out.println("\t\t\t\t\t>>>> TECLE ENTER PARA VOLTAR AO MENU <<<<");
-	
-	try {
-		System.in.read();
-		entrada.nextLine();
-	} catch (Exception e) {
+ public static void voltaAoMenu() {
+		System.out.println("\t\t\t\t\t    >>>>>>>> TECLE ENTER PARA VOLTAR AO MENU <<<<<<<<");
+		try {
+			System.in.read();
+			Scanner entrada = null;
+			entrada.nextLine();
+		} catch (Exception e) {
+                } 
 	}
 }
-	
- }

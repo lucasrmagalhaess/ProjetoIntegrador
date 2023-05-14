@@ -1,11 +1,12 @@
 package ShowDoMilhao;
 
+import ShowDoMilhao.sair;
 import java.util.Scanner;
 
 public class jogar {
 
 	static Scanner leitor = new Scanner(System.in);
-	static int resposta1;
+	static int resposta1;          				//variavel que guarda o valor da resposta
 	static int pontuacao = 0;
 	static boolean continuaJogo = true;                   // sempre sera verdadeiro no codigo ate que seja falso para algo
 
@@ -30,9 +31,7 @@ public class jogar {
 			tecleParaContinuar();
 
 		} else {
-			System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-			System.out.println("                         Sua pontuação foi R$ "+pontuacao              );
-			System.out.println("");
+			errouResposta();
 			tecleParaSair();
 		   }
 		
@@ -42,8 +41,7 @@ public class jogar {
 			if (pergunta02() == 1) {
 				tecleParaContinuar();
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -54,8 +52,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -66,8 +63,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -78,8 +74,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -90,8 +85,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -102,8 +96,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -114,8 +107,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -126,8 +118,7 @@ public class jogar {
 				tecleParaContinuar();
 
 			} else {
-				System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-				System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				errouResposta();
 				tecleParaSair();
 			}
 		}
@@ -141,11 +132,12 @@ public class jogar {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				tecleParaSair();
 				
-		} else {
-			System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
-			System.out.println("                         Sua pontuação foi R$ "+pontuacao               );
+				sair voltarMenu = new sair();          // chama o metodo da classe sair 
+				voltarMenu.voltaAoMenu();
+				
+	} else {
+		errouResposta();
 			tecleParaSair();
 			}
 		}
@@ -166,7 +158,7 @@ public class jogar {
 
 		if (resposta1 == 4) {
 			pontuacao += 999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -192,7 +184,7 @@ public class jogar {
 
 		if (resposta1 == 2) {
 			pontuacao += 999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -220,7 +212,7 @@ public class jogar {
 			pontuacao += 2999
 
 			;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -246,7 +238,7 @@ public class jogar {
 
 		if (resposta1 == 3) {
 			pontuacao += 4999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -272,7 +264,7 @@ public class jogar {
 
 		if (resposta1 == 4) {
 			pontuacao += 9999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -298,7 +290,7 @@ public class jogar {
 
 		if (resposta1 == 2) {
 			pontuacao += 29999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -324,7 +316,7 @@ public class jogar {
 
 		if (resposta1 == 1) {
 			pontuacao += 49999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			;
 			return 1;
@@ -351,7 +343,7 @@ public class jogar {
 
 		if (resposta1 == 4) {
 			pontuacao += 99999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -377,7 +369,7 @@ public class jogar {
 
 		if (resposta1 == 3) {
 			pontuacao += 499999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -403,7 +395,7 @@ public class jogar {
 
 		if (resposta1 == 1) {
 			pontuacao += 499999;
-			System.out.println("\nResposta Correta!");
+			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
 		} else {
@@ -412,11 +404,11 @@ public class jogar {
 	}										
 											// funcao para chamar o resultado final ao acertar todas
 	static int resultadoFinal() {   
-		System.out.println("\r==========================================================================================");
-		System.out.println("                       Parabéns, você chegou ao final do jogo!                         ");
-		System.out.println("                               VOCE GANHOU R$ " + pontuacao                          );
-		System.out.println("\n                               OBRIGADO POR JOGAR!                                        ");
-		System.out.println("============================================================================================");
+		System.out.println("\r\t\t\t\t==========================================================================================");
+		System.out.println("\t\t\t\t                       Parabéns, você chegou ao final do jogo!                         ");
+		System.out.println("\t\t\t\t                               VOCE GANHOU R$ " + pontuacao                          );
+		System.out.println("\n\t\t\t\t                                 OBRIGADO POR JOGAR!                                        ");
+		System.out.println("\t\t\t\t============================================================================================");
 		return pontuacao;
 	}
 											// funcao espera o usuario digitar enter para prosseguir
@@ -434,9 +426,7 @@ public class jogar {
 										// retorna ao inicio apos errar resposta ou volta ao menu
 	public static void tecleParaSair() {
 		Scanner entrada = new Scanner(System.in);
-		System.out.println("======================");
-		System.out.println("TECLE ENTER PARA SAIR");
-		System.out.println("======================");
+		System.out.println("\t\t\t\t(TECLE ENTER PARA SAIR)");
 		continuaJogo = false;
 		try {
 			System.in.read();
@@ -444,4 +434,11 @@ public class jogar {
 		} catch (Exception e) {
 		}
 	}
+	
+	static int errouResposta() {             // funcao para usar no else quando resposta for errada
+		System.out.println("\n>>>>>>>>>>>>>>>>>>>>>>>> QUE PENA, VOCE ERROU! <<<<<<<<<<<<<<<<<<<<<<<<<<");
+		System.out.println("                         Sua pontuação foi R$ "+pontuacao              );
+		System.out.println("");
+		return 0;
+                } 
 }
