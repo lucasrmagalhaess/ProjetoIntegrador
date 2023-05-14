@@ -3,7 +3,7 @@ package ShowDoMilhao;
 import java.util.Timer;
 import java.util.Scanner;
 
-public class codigo {
+public class menu {
 
 	public static void main(String[] args) throws InterruptedException {
 
