@@ -409,7 +409,7 @@ public class jogar {
 		System.out.println("\t\t\t\t                               VOCE GANHOU R$ " + pontuacao                          );
 		System.out.println("\n\t\t\t\t                                 OBRIGADO POR JOGAR!                                        ");
 		System.out.println("\t\t\t\t============================================================================================");
-		return pontuacao;
+		return 0;
 	}
 											// funcao espera o usuario digitar enter para prosseguir
 	public static void tecleParaContinuar() {
