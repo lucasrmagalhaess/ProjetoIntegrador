@@ -26,15 +26,23 @@ public class jogar {
 			e.printStackTrace();
 		}
 		
-						                  // pergunta 01
+					                  // pergunta 01
 		    if (pergunta01() == 1) {    	
 			tecleParaContinuar();
 
 		} else {
-			errouResposta();
-			tecleParaSair();
-		   }
+		    errouResposta();
+		    System.out.println("Deseja continuar jogando? (1-Sim / 2-Não)");
+		    int escolha = leitor.nextInt();
+		    if (escolha == 1) {
+		        continuaJogo = true;
+		    } else {
+		        continuaJogo = false;
+		        tecleParaSair();
+		    }
+		}
 		
+	
 		
 		
 		if (continuaJogo) {				// pegunta 02			
@@ -263,7 +271,7 @@ public class jogar {
 		resposta1 = leitor.nextInt();
 
 		if (resposta1 == 4) {
-			pontuacao += 9999;
+			pontuacao += 39999;
 			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
@@ -289,7 +297,7 @@ public class jogar {
 		resposta1 = leitor.nextInt();
 
 		if (resposta1 == 2) {
-			pontuacao += 29999;
+			pontuacao +=49999;
 			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
@@ -315,7 +323,7 @@ public class jogar {
 		resposta1 = leitor.nextInt();
 
 		if (resposta1 == 1) {
-			pontuacao += 49999;
+			pontuacao += 99999;
 			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			;
@@ -368,7 +376,7 @@ public class jogar {
 		resposta1 = leitor.nextInt();
 
 		if (resposta1 == 3) {
-			pontuacao += 499999;
+			pontuacao += 199999;
 			System.out.println("\n####### Resposta Correta! #######");
 			pontuacao++;
 			return 1;
