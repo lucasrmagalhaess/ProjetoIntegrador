@@ -15,7 +15,8 @@ public class menu {
 		jogar jogar = new jogar();
 		boolean menu = false;
 		
-	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> BEM VINDO AO SHOW DO MILHÃO! <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
+		System.out.println("\t+========================================================================================+\r");
+		System.out.println("\t                                       SHOW DO MILHÃO\n"                                      );
 	try {
 		Thread.sleep(1500);
 	} catch (InterruptedException e) {
@@ -26,13 +27,13 @@ public class menu {
 		int opcao = 0;
 
 		do {
-
+			
 			System.out.println("\t+========================================= MENU =========================================+\r");
 			System.out.println("\t                                       1. Instruções"                                      );
 			System.out.println("\t                                       2. Iniciar Jogo"                                    );
-			System.out.println("\t                                       3. Sair"                                            );
-			System.out.println("\r\t+========================================================================================+\n");
-			System.out.printf ("\nEscolha sua opção: ");
+			System.out.println("\t                                       3. Créditos"                                            );
+			System.out.println("\r\t+========================================================================================+");
+			System.out.printf ("\n\tEscolha sua opção: ");
 			opcao = entrada.nextInt();
 
 			switch (opcao) {
