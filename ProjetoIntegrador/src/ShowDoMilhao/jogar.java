@@ -147,7 +147,6 @@ public class jogar {
 	   								// as perguntas e respostas estao aqui
 
 	static int pergunta01() {
-		System.out.println("Oi");
 		System.out.println("\t1- Quantos títulos de Copa do Mundo tem o Brasil?: ");
 		System.out.println("\tA) - 4");
 		System.out.println("\tB) - 3");
