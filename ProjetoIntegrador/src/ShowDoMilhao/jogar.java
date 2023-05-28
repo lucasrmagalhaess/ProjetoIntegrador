@@ -26,7 +26,7 @@ public class jogar {
 			e.printStackTrace();
 		}
 		
-						                  // pergunta 01
+					                  // pergunta 01
 		    if (pergunta01() == 1) {    	
 			tecleParaContinuar();
 
@@ -34,7 +34,6 @@ public class jogar {
 			errouResposta();
 			tecleParaSair();
 		   }
-		
 		
 		
 		if (continuaJogo) {				// pegunta 02			
@@ -149,14 +148,14 @@ public class jogar {
 
 	static int pergunta01() {
 		System.out.println("\t1- Quantos títulos de Copa do Mundo tem o Brasil?: ");
-		System.out.println("\t1) - 4");
-		System.out.println("\t2) - 3");
-		System.out.println("\t3) - 6");
-		System.out.println("\t4) - 5");
+		System.out.println("\tA) - 4");
+		System.out.println("\tB) - 3");
+		System.out.println("\tC) - 6");
+		System.out.println("\tD) - 5");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();                    //serve para converter para minuscula 
 
-		if (resposta1 == 4) {
+		if (resposta1.equals("d")) {                                          //compara com minuscula
 			pontuacao += 999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -178,14 +177,14 @@ public class jogar {
 		}
 
 		System.out.println("\t2- Qual bicho transmite a doença de Chagas? ");
-		System.out.println("\t1) - Abelha");
-		System.out.println("\t2) - Barbeiro");
-		System.out.println("\t3) - Pulga");
-		System.out.println("\t4) - Barata");
+		System.out.println("\tA) - Abelha");
+		System.out.println("\tB) - Barbeiro");
+		System.out.println("\tC) - Pulga");
+		System.out.println("\tD) - Barata");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 2) {
+		if (resposta1.equals("b")) {
 			pontuacao += 999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -206,14 +205,14 @@ public class jogar {
 		}
 
 		System.out.println("\t3- Quingentésimo corresponde a qual número? ");
-		System.out.println("\t1) - 500");
-		System.out.println("\t2) - 5000");
-		System.out.println("\t3) - 50");
-		System.out.println("\t4) - 5");
+		System.out.println("\tA) - 500");
+		System.out.println("\tB) - 5000");
+		System.out.println("\tC) - 50");
+		System.out.println("\tD) - 5");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 1) {
+		if (resposta1.equals("a")) {
 			pontuacao += 2999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -234,14 +233,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t4- Como se chama o estudo entre palavras e significados? ");
-		System.out.println("\t1) - Fonética");
-		System.out.println("\t2) - Filosofia");
-		System.out.println("\t3) - Semântica");
-		System.out.println("\t4) - Psiquiatria");
+		System.out.println("\tA) - Fonética");
+		System.out.println("\tB) - Filosofia");
+		System.out.println("\tC) - Semântica");
+		System.out.println("\tD) - Psiquiatria");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 3) {
+		if (resposta1.equals("c")) {
 			pontuacao += 4999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -262,14 +261,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t5- Que animal da fauna brasileira está retratado na nota de 10 reais? ");
-		System.out.println("\t1) - Jabuti");
-		System.out.println("\t2) - Onça");
-		System.out.println("\t3) - Tucano");
-		System.out.println("\t4) - Arara");
+		System.out.println("\tA) - Jabuti");
+		System.out.println("\tB) - Onça");
+		System.out.println("\tC) - Tucano");
+		System.out.println("\tD) - Arara");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 4) {
+		if (resposta1.equals("d")) {
 			pontuacao += 39999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -290,14 +289,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t6- A compensação por perda é chamada de: ");
-		System.out.println("\t1) - Déficit");
-		System.out.println("\t2) - Indenização");
-		System.out.println("\t3) - Indexação");
-		System.out.println("\t4) - Indébito");
+		System.out.println("\tA) - Déficit");
+		System.out.println("\tB) - Indenização");
+		System.out.println("\tC) - Indexação");
+		System.out.println("\tD) - Indébito");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 2) {
+		if (resposta1.equals("b")) {
 			pontuacao += 49999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -318,14 +317,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t7- Qual montanha se localiza entre a fronteira do Tibet com o Nepal? ");
-		System.out.println("\t1) - Monte Everest");
-		System.out.println("\t2) - Rocinha Community");
-		System.out.println("\t3) - Monte Carlo");
-		System.out.println("\t4) - Monte Branco");
+		System.out.println("\tA) - Monte Everest");
+		System.out.println("\tB) - Rocinha Community");
+		System.out.println("\tC) - Monte Carlo");
+		System.out.println("\tD) - Monte Branco");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 1) {
+		if (resposta1.equals("a")) {
 			pontuacao += 99999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -347,14 +346,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t8- Qual flor é o símbolo nacional do Egito e foi considerada sagrada na antiguidade? ");
-		System.out.println("\t1) - Rosa");
-		System.out.println("\t2) - Lírio");
-		System.out.println("\t3) - Jasmin");
-		System.out.println("\t4) - Lotus");
+		System.out.println("\tA) - Rosa");
+		System.out.println("\tB) - Lírio");
+		System.out.println("\tC) - Jasmin");
+		System.out.println("\tD) - Lotus");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 4) {
+		if (resposta1.equals("d")) {
 			pontuacao += 99999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                   ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -375,14 +374,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t9- Quem compôs o Hino da Independência? ");
-		System.out.println("\t1) - Tom Jobim");
-		System.out.println("\t2) - Catroz Alves");
-		System.out.println("\t3) - Dom Pedro I");
-		System.out.println("\t4) - Tim Maia");
+		System.out.println("\tA) - Tom Jobim");
+		System.out.println("\tB) - Catroz Alves");
+		System.out.println("\tC) - Dom Pedro I");
+		System.out.println("\tD) - Tim Maia");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 3) {
+		if (resposta1.equals("c")) {
 			pontuacao += 199999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -403,14 +402,14 @@ public class jogar {
 		}
 		
 		System.out.println("\t10- Quando começou e terminou a primeira Guerra Mundial? ");
-		System.out.println("\t1) - 1914 - 1918");
-		System.out.println("\t2) - 1902 - 1930");
-		System.out.println("\t3) - 1937 - 1945");
-		System.out.println("\t4) - 1912 - 1915");
+		System.out.println("\tA) - 1914 - 1918");
+		System.out.println("\tB) - 1902 - 1930");
+		System.out.println("\tC) - 1937 - 1945");
+		System.out.println("\tD) - 1912 - 1915");
 		System.out.printf("\tEscolha sua alternativa: ");
-		resposta1 = leitor.nextInt();
+		String resposta1 = leitor.nextLine().toLowerCase();
 
-		if (resposta1 == 1) {
+		if (resposta1.equals("a")) {
 			pontuacao += 499999;
 			System.out.println("\r\t+========================================================================================+\n");
 			System.out.println("\t                                    ✓  RESPOSTA CORRETA!  ✓	"                                      );
@@ -429,6 +428,7 @@ public class jogar {
 		System.out.println("\t\t                               VOCE GANHOU R$ " + pontuacao                          );
 		System.out.println("\n\t\t                                OBRIGADO POR JOGAR!                                        ");
 		System.out.println("\t============================================================================================");
+		pontuacao = 0;
 		return 0;
 	}
 											// funcao espera o usuario digitar enter para prosseguir
@@ -437,6 +437,7 @@ public class jogar {
 	
 		System.out.println("\t                                  TECLE ENTER PARA CONTINUAR"                                      );
 		System.out.println("\r\t+========================================================================================+\n");
+		continuaJogo = true;
 
 		try {
 			System.in.read();
@@ -465,7 +466,7 @@ public class jogar {
 		System.out.println("\t                                     Você ganhou R$ " +pontuacao                                        );
 		System.out.println("\t                                     OBRIGADO POR JOGAR!                                        ");
 		System.out.println("\r\t+========================================================================================+");
-
+		pontuacao = 0;
 		System.out.println("");
 		return 0;
                 } 
